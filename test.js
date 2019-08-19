@@ -29,16 +29,17 @@
 
             $(document).keydown(function(e){
                 var k = e.which;
-                if(k == "40" || k=='s') {
+		    alert(k);
+                if(k=='s') {
                     scene.getMeshByName("Box").position.z += 0.5;
                 }
-                else if(k == "39" || k=='d'){
+                else if(k=='d'){
                     scene.getMeshByName("Box").position.x += 0.5;                    
                 }
-                else if(k == "38" || k=='w') {
+                else if(k=='w') {
                     scene.getMeshByName("Box").position.z -= 0.5;
                 }
-                else if(k == "37" || k=='a') {
+                else if(k=='a') {
                     scene.getMeshByName("Box").position.x -= 0.5;                                        
                 }
             });
